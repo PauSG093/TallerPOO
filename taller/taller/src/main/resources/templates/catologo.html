@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Catalogo de Peliculas</title>
+</head>
+<body>
+<h1>Catálogo de Películas</h1>
+
+<table>
+    <tr>
+        <th>Título</th>
+        <th>Descripción</th>
+    </tr>
+    <tr th:each="pelicula : ${peliculas}">
+        <td th:text="${pelicula.titulo}"></td>
+        <td th:text="${pelicula.descripcion}"></td>
+    </tr>
+</table>
+</body>
+</html>
